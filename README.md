@@ -14,5 +14,22 @@ Check the reference from [cppreference.com](https://en.cppreference.com/w/).
 - Characters and Strings
 - Functions
 - Pointers and References
+  - Initialization
+  - Dereference
+  - Dynamic
+  - Arrays
+  - Arithmetic
+  - Functions
+  - Reference
 - OOP - Classes and Objects
+- Operator Overloading
+- Inheritance
+- Polymorphism
+  - Concept, problem
+  - Virtual
+  - Override
+  - Reference
+  - Pure
+  - Interface
+- Smart Pointers
 - ...
