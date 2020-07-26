@@ -37,7 +37,7 @@ Copy::Copy(int d)
 // deep copy
 Copy::Copy(const Copy &source) : Copy{*source.data}
 {
-  // same as below, just not calling the constructor
+  // same as above, just not calling the constructor
   // data = new int;
   // *data = *source.data;
   cout << "Copy Constructor: deep copy" << endl;

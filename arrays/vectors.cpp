@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
   // vector<char> vowels;    // empty
-  // vector<char> vowels(5); // initialized to 0
+  // vector<char> vowels(5); // initialized
   vector<char> vowels{'a', 'e', 'i', 'o', 'u'};
 
   cout << "index 0 is: " << vowels[0] << endl;

@@ -34,7 +34,7 @@ class Checking : public Account
 {
 public:
   virtual ~Checking() {}
-  virtual void withdraw(double amount)
+  virtual void withdraw(double amount) override
   {
     cout << "In Checking::withdraw" << endl;
   }

@@ -36,12 +36,8 @@ public:
   }
 };
 
-// if inheritance is protected or private, then a and b
-// would also be protected or private
 class Derived : public Base
 {
-  // using Base::Base; // inherit base constructor
-
 private:
   int doubledValue;
 
@@ -66,7 +62,9 @@ public:
     {
       return *this;
     }
-    Base::operator=(rhs); // !!!
+    // !!!
+    Base::operator=(rhs);
+    // !!!
     doubledValue = rhs.doubledValue;
     return *this;
   }

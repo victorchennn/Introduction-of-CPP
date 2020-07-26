@@ -79,6 +79,7 @@ const char *Mystring::get_str() const
   return str;
 }
 
+// global
 bool operator==(const Mystring &lhs, const Mystring &rhs)
 {
   return (strcmp(lhs.str, rhs.str) == 0);

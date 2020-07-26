@@ -113,6 +113,7 @@ int main()
   int *results = combine(nums1, len1, nums2, len2);
   constexpr size_t len{len1 * len2};
   display(results, len);
+  delete[] results;
 
   return 0;
 }

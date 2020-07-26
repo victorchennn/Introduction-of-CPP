@@ -67,9 +67,9 @@ int main()
   p4->withdraw(100);
 
   delete p1;
-  delete p2;
-  delete p3;
-  delete p4;
+  delete p2; // call base destructor then
+  delete p3; // call base destructor then
+  delete p4; // call base destructor then
 
   return 0;
 }

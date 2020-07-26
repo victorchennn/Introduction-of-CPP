@@ -67,6 +67,21 @@ Mystring &Mystring::operator=(Mystring &&rhs)
   return *this;
 }
 
+void Mystring::display() const
+{
+  cout << str << " : " << get_length() << endl;
+}
+
+int Mystring::get_length() const
+{
+  return strlen(str);
+}
+
+const char *Mystring::get_str() const
+{
+  return str;
+}
+
 bool Mystring::operator==(const Mystring &rhs) const
 {
   return (strcmp(str, rhs.str) == 0);
@@ -93,21 +108,6 @@ Mystring Mystring::operator+(const Mystring &rhs) const
   Mystring temp{buff};
   delete[] buff;
   return temp;
-}
-
-void Mystring::display() const
-{
-  cout << str << " : " << get_length() << endl;
-}
-
-int Mystring::get_length() const
-{
-  return strlen(str);
-}
-
-const char *Mystring::get_str() const
-{
-  return str;
 }
 
 int main()

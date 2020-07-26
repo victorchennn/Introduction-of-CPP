@@ -53,6 +53,8 @@ void display_player(Player p)
   cout << "XP: " << p.get_xp() << endl;
 }
 
+// since variable const Player cp{"cp"} is const, so parameter should also be const
+// if not using &p, function will call copy constructor
 void display_player_name(const Player &p)
 {
   cout << p.get_name() << endl;
@@ -75,7 +77,10 @@ int main()
   delete boss;
 
   const Player cp{"cp"};
-  display_player_name(cp);
+  display_player_name(cp); // automatically called destructor
+  const Player *cpp = new Player("cpp");
+  display_player_name(*cpp);
+  delete cpp; // self called destructor
 
   return 0;
 }

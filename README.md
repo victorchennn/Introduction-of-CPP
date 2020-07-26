@@ -32,4 +32,6 @@ Check the reference from [cppreference.com](https://en.cppreference.com/w/).
   - Pure
   - Interface
 - Smart Pointers
-- ...
+- Exception Handling
+- I/O and Streams
+- The Standard Template Library

@@ -1,6 +1,9 @@
 #include "Account.h"
 #include "AccountSavings.h"
+#include "IllegalBalanceException.h"
+
 #include <iostream>
+#include <memory>
 
 using namespace std;
 
@@ -31,6 +34,16 @@ int main()
 
   s.withdraw(500.0);
   cout << s << endl;
+
+  try
+  {
+    unique_ptr<AccountSavings> p = make_unique<AccountSavings>("savings", -10.0, 5.0);
+    cout << *p << endl;
+  }
+  catch (const IllegalBalanceException &e)
+  {
+    cerr << e.what() << endl;
+  }
 
   return 0;
 }
